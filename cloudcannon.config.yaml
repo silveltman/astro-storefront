@@ -1,0 +1,60 @@
+paths:
+  data: src/data
+  # uploads: assets/uploads
+  # dam_uploads: uploads
+
+# -----------------------------------------------
+# Cloudcannn sidebar configuration
+# -----------------------------------------------
+
+collection_groups:
+  - heading: Pages
+    collections:
+      - pages
+
+# -----------------------------------------------
+# Collection configuration
+# -----------------------------------------------
+
+collections_config:
+  data:
+    path: src/data
+    disable_add: true
+    disable_add_folder: true
+  pages:
+    path: "src/content/pages"
+    output: true
+    _enabled_editors:
+      - visual
+
+# -----------------------------------------------
+# Input customization
+# -----------------------------------------------
+
+_inputs:
+  layout:
+    hidden: true
+
+  seo:
+    label: SEO
+    comment: Search engine optimization'
+
+  seo.title:
+    label: Page title
+    comment: Aim for 50-60 characters
+
+  seo.description:
+    label: Page description
+    comment: Aim for 50-120 characters
+
+  image.src:
+    type: image
+    label: Upload
+    correct_orientation: false
+
+  image.alt:
+    label: Description
+
+  icon:
+    hidden: true
+

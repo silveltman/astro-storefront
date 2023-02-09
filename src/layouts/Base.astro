@@ -1,0 +1,62 @@
+---
+import '../assets/styles.css'
+import '@fontsource/montserrat'
+
+import site from '@data/site.json'
+import { SEO } from 'astro-seo'
+import globalSeo from '@data/site.yaml'
+const localSeo = Astro.props.seo
+const title = localSeo?.title || globalSeo.title
+const description = localSeo?.description || globalSeo.description
+---
+
+<!DOCTYPE html>
+<html
+  lang={site.locale || 'en'}
+  class="w-full h-full overflow-x-hidden scroll-smooth"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+      name="viewport"
+    />
+    <meta
+      name="generator"
+      content={Astro.generator}
+    />
+
+    <script type="text/partytown">
+      /* Insert GTM Script Here */
+    </script>
+
+    <SEO
+      {...globalSeo}
+      {title}
+      {description}
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Symbols -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body
+    class="w-full h-full overflow-x-hidden text-gray-600 font-sans scroll-smooth"
+  >
+    <slot />
+  </body>
+</html>

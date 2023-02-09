@@ -1,0 +1,22 @@
+logo: 
+
+links:
+  - text: Home
+    url: "/"
+  - text: Products
+    url: "#"
+  - text: Contact
+    url: "/contact"
+
+buttons:
+  cart:
+  account:
+  search: 
+
+
+CtaPrimary:
+  text: Sign up
+  url: "#"
+CtaSecondary:
+  text: Sign in
+  url: "#"

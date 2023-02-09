@@ -1,0 +1,32 @@
+---
+import { getEntryBySlug } from 'astro:content'
+import Layout from '@layouts/Base.astro'
+import ButtonPrimary from '@components/atoms/ButtonPrimary.svelte'
+import ButtonSecondary from '@components/atoms/ButtonSecondary.svelte'
+import ButtonTertiary from '@components/atoms/ButtonTertiary.svelte'
+import ButtonIcon from '@components/atoms/ButtonIcon.svelte'
+
+const page = await getEntryBySlug('pages', 'index')
+const { seo, image } = page.data
+---
+
+<Layout>
+  <div class="p-10 flex flex-col gap-10 items-start">
+    <ButtonPrimary />
+    <ButtonSecondary />
+    <ButtonTertiary />
+    <ButtonIcon
+      size={'sm'}
+      icon="home"
+    />
+    <ButtonIcon
+      size={'md'}
+      icon="home"
+      text="10"
+    />
+    <ButtonIcon
+      size={'lg'}
+      icon="home"
+    />
+  </div>
+</Layout>

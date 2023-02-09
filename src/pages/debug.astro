@@ -1,0 +1,52 @@
+---
+import Select from '@components/atoms/Select.svelte'
+import Textarea from '@components/atoms/Textarea.svelte'
+import Textfield from '@components/atoms/Textfield.svelte'
+import Layout from '@layouts/Base.astro'
+---
+
+<Layout>
+  <div>
+    <picture>
+      <source
+        type="image/webp"
+        srcset="/_image?f=webp&w=320&h=213&ar=1.5&href=%2Fimg%2Fexample.jpg 320w,/_image?f=webp&w=640&h=427&ar=1.5&href=%2Fimg%2Fexample.jpg 640w,/_image?f=webp&w=1024&h=683&ar=1.5&href=%2Fimg%2Fexample.jpg 1024w,/_image?f=webp&w=1280&h=853&ar=1.5&href=%2Fimg%2Fexample.jpg 1280w,/_image?f=webp&w=1920&h=1280&ar=1.5&href=%2Fimg%2Fexample.jpg 1920w"
+        sizes="(min-width: 1024px) 1024px, 100vw"
+      />
+      <source
+        type="image/jpeg"
+        srcset="/_image?f=jpg&w=320&h=213&ar=1.5&href=%2Fimg%2Fexample.jpg 320w,/_image?f=jpg&w=640&h=427&ar=1.5&href=%2Fimg%2Fexample.jpg 640w,/_image?f=jpg&w=1024&h=683&ar=1.5&href=%2Fimg%2Fexample.jpg 1024w,/_image?f=jpg&w=1280&h=853&ar=1.5&href=%2Fimg%2Fexample.jpg 1280w,/_image?f=jpg&w=1920&h=1280&ar=1.5&href=%2Fimg%2Fexample.jpg 1920w"
+        sizes="(min-width: 1024px) 1024px, 100vw"
+      />
+      <img
+        alt="test"
+        src="/_image?f=jpg&w=1920&h=1280&ar=1.5&href=%2Fimg%2Fexample.jpg"
+        loading="lazy"
+        decoding="async"
+        class="hello-world"
+      />
+    </picture>
+
+    <picture>
+      <source
+        srcset="/img/example320_9999.webp 320w,/img/example640_9999.webp 640w,/img/example1024_9999.webp 1024w,/img/example1280_9999.webp 1280w,/img/example1920_9999.webp 1920w"
+        type="image/webp"
+        media="(min-width: 1024px) 1024px, 100vw"
+      />
+
+      <source
+        srcset="/img/example320_9999.jpg 320w,/img/example640_9999.jpg 640w,/img/example1024_9999.jpg 1024w,/img/example1280_9999.jpg 1280w,/img/example1920_9999.jpg 1920w"
+        type="image/jpg"
+        media="(min-width: 1024px) 1024px, 100vw"
+      />
+
+      <img
+        class="hello-world"
+        src="/img/example.jpg"
+        alt="test"
+        loading="lazy"
+        decoding="async"
+      />
+    </picture>
+  </div>
+</Layout>

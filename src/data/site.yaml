@@ -1,0 +1,74 @@
+branding:
+  logo:
+    full:
+      src:
+      alt:
+    square:
+      src:
+      alt:
+
+site_details:
+  email: 
+  phone:
+  adress:
+    postal_code:
+    street:
+    number:
+    city:
+    country:
+
+analytics:
+  google:
+  facebook:
+  livesession:
+
+
+owner_details:
+  name:
+  email:
+  phone:
+  adress:
+    postal_code:
+    street:
+    number:
+    city:
+    country:
+
+seo:
+  title: 'My very cool title'
+  description: 'My awesome description'
+  openGraph:
+    basic:
+      title: ''
+      type: ''
+      image: ''
+      url: ''
+    optional:
+      audio: ''
+      description: ''
+      determiner: ''
+      locale: ''
+      localeAlternate:
+        - ''
+      siteName: ''
+      video: ''
+    image:
+      url: ''
+      secureUrl: ''
+      type: ''
+      width: 0
+      height: 0
+      alt: ''
+    article:
+      publishedTime: ''
+      modifiedTime: ''
+      expirationTime: ''
+      authors:
+        - ''
+      section: ''
+      tags:
+        - ''
+  twitter:
+    card: ''
+    site: ''
+    creator: ''

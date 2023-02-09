@@ -1,0 +1,17 @@
+store_name: Webtunus
+
+address: vismarkt 5a, 9712CA, Groningen
+
+contact:
+  email: silveltman@gmail.com
+  tel: +316 42520972
+
+currency:
+
+formats:
+  timezone: 
+  locale:
+  unit_system:
+  weight_unit:
+
+googleAnalytics: ''
